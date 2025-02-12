@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting Phone API</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="text-6xl mb-8 ml-20">Hunting Phone</h2>
+    </header>
+    <main class="container mx-auto mt-8">
+      <div class="bg-gray-100 p-4 rounded-[10px] mb-10">
+        <input id="search-field" type="text" placeholder="Search.." class="input input-bordered w-full max-w-xs" />
+        <button onclick="handleSearch()" class="btn btn-accent text-white">Search</button>
+      </div>
+        <section>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            </div>
+        </section>
+        <div id="show-more-container" class="hidden">
+          <button class="btn btn-success">Show More</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
